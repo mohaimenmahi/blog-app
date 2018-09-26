@@ -12,7 +12,7 @@ class CommentList extends Component {
     }
     handleRemove(event) {
         event.preventDefault();
-        this.blogService.deleteComment(this.props.obj._id);
+        this.blogService.deleteComment(this.props.id,this.props.obj._id);
     }
     render() {
         return (
@@ -20,7 +20,7 @@ class CommentList extends Component {
                 {
                     <div>
                         <Card>
-                            <p>{this.props.obj.post}</p>
+                            <p>Guest User: {this.props.obj.post}</p>
                             <p>{moment(this.props.obj.time).format("MMM Do YY, h:mm a")}</p>
                             <Form onSubmit={this.handleRemove}>
                                 <input

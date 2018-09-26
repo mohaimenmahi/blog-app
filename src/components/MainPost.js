@@ -6,6 +6,8 @@ import { Tabs, Form, Card } from 'antd';
 import Comment from './Comment';
 import CommentList from './CommentList';
 
+import '../App.css';
+
 const TabPane = Tabs.TabPane;
 
 class MainPost extends Component {
@@ -50,7 +52,7 @@ class MainPost extends Component {
                                             {
                                                 blog.comments.length === 0 ? " " :
                                                 blog.comments.map((com, i) => {
-                                                    return <CommentList obj={com} key={i}/>
+                                                    return <CommentList obj={com} key={i} id={blog._id}/>
                                                 })
                                             }
                                         </div>

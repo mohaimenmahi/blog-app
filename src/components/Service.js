@@ -23,8 +23,8 @@ class Service {
                 console.log(err);
         })
     }
-    deleteComment(id) {
-        axios.post('http://localhost:4200/blogs/delete/'+id,)
+    deleteComment(blogId, commentId) {
+        axios.post(`http://localhost:4200/blogs/delete/${commentId}`)
             .then(res => {
                 console.log(res);
             }).catch(err => {
