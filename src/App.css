@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #fff;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.post-entry {
+  width: 900px;
+  justify-content: center;
+  margin: 25%;
+}
+
+.input-data {
+  margin: 20px;
+}
+
+.card {
+  justify-content: center;
+  width: 900px;
+  margin-left: 20%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.blog-author {
+  border-bottom: 0.01rem solid grey;
+}
+
+.blog-body {
+  border-top: 25px;
+}
+
+.blog-container {
+  justify-content: center;
+  width: 900px;
+  margin-left: 200px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
