@@ -17,9 +17,10 @@ class IndexPost extends Component {
             .then(response => {
                 this.setState({
                     blogs: response.data
-                }).catch(err => {
-                    console.log(err)
                 })
+            })
+            .catch(err => {
+                console.log(err)
             })
     }
     showPostList() {
